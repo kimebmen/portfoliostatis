@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '6)hfuyqk2tb1+-syr@l0@ge*9t*8frecx)_z)%g)^^gpg0uz*&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['my-simpleportfolio.herokuapp.com', '127.0.0.1']
 
@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd4bf82ea4nloc1',
-        'HOST': 'ec2-54-161-208-31.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'cjsgtgpakfxecq',
-        'PASSWORD': 'a5e9bd98d5d4bfa2ba83f45c7d33e2e6a32afa02bb6491dda39db57789a158a3',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -127,6 +123,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR

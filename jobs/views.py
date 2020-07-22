@@ -7,6 +7,33 @@ def home(request):
     jobs = Job.objects
     return render(request, 'jobs/home.html', {'jobs': jobs})
 
-def detail(request, job_id):
-    job_detail = get_object_or_404(Job, pk=job_id)
-    return render(request, 'jobs/detail.html', {'job': job_detail})
+def detail1(request):    
+    return render(request, 'jobs/detail1.html')
+
+def detail2(request):    
+    return render(request, 'jobs/detail2.html')
+
+def detail3(request):    
+    return render(request, 'jobs/detail3.html')
+
+def detail4(request):    
+    return render(request, 'jobs/detail4.html')
+
+def detail5(request):    
+    return render(request, 'jobs/detail5.html')
+
+def detail6(request):    
+    return render(request, 'jobs/detail6.html')
+
+def detail7(request):    
+    return render(request, 'jobs/detail7.html')
+
+def detail8(request):    
+    return render(request, 'jobs/detail8.html')
+
+def detail9(request):    
+    return render(request, 'jobs/detail9.html')
+
+def detail10(request):    
+    return render(request, 'jobs/detail10.html')
+
