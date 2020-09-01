@@ -33,6 +33,7 @@ urlpatterns = [
     path('jobs/8', jobs.views.detail8, name='detail8'),
     path('jobs/9', jobs.views.detail9, name='detail9'),
     path('jobs/10', jobs.views.detail10, name='detail10'),
+    path('jobs/11', jobs.views.detail11, name='detail11'),
 
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -37,3 +37,6 @@ def detail9(request):
 def detail10(request):    
     return render(request, 'jobs/detail10.html')
 
+def detail11(request):    
+    return render(request, 'jobs/detail11.html')
+
